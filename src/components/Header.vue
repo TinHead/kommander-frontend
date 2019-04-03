@@ -6,7 +6,7 @@
         <v-spacer></v-spacer>
             <v-btn
                 flat
-                href="https://github.com/vuetifyjs/vuetify/releases/latest"
+                ref="setup"
                 target="_blank"
             >
             <span class="mr-2">setup</span>

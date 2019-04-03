@@ -10,13 +10,22 @@
 
 <script>
 import { Cartesian, Line } from 'laue'
+import axios from 'axios'
 
 export default {
   components: {
     LaCartesian: Cartesian,
     LaLine: Line
   },
-  data: () => ({
+mounted(){
+    axios
+    .get("http://127.0.0.1:8090/ping")
+    .then(function(response){
+        console.log(response);
+    })
+},
+    
+    data: () => ({
     values: [
       { name: '5', ext: 40, bed: 24 },
       { name: '10', ext: 50, bed: 40 },
