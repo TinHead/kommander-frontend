@@ -4,7 +4,7 @@ replicas: 1
 image: ${artifact.metadata.image}
 dockercfg: ${artifact.source.dockerconfig}
 
-createImagePullSecret: false
+createImagePullSecret: true
 
 createNamespace: true
 namespace: ${infra.kubernetes.namespace}
