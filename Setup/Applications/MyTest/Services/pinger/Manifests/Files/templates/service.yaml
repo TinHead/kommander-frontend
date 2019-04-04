@@ -1,12 +1,13 @@
-apiVersion: v1
-kind: Service
+# ingress.yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
 metadata:
-  name: {{.Values.name}}-svc
+  name: basic
 spec:
-  type: {{.Values.serviceType}}
-  ports:
-  - port: {{.Values.servicePort}}
-    targetPort: {{.Values.serviceTargetPort}}
-    protocol: TCP
-  selector:
-    app: {{.Values.name}}
+  rules:
+  - host: foo-basic.bar.com
+    http:
+      paths:
+      - backend:
+          serviceName: harness-example-svc
+          servicePort: 80
