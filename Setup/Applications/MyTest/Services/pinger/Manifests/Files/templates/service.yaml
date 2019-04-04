@@ -5,7 +5,7 @@ metadata:
   name: basic
 spec:
   rules:
-  - host: foo-basic.bar.com
+  - host: pinger.dev.adobe.io
     http:
       paths:
       - backend:
