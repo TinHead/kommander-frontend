@@ -1,0 +1,17 @@
+harnessApiVersion: '1.0'
+type: DOCKER
+password: safeharness:-UBdVEVVRkukcEbMcwcRrw
+url: https://docker-api-platform-snapshot.dr-uw2.adobeitc.com/
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+username: apip0001

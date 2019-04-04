@@ -1,0 +1,23 @@
+harnessApiVersion: '1.0'
+type: KUBERNETES_CLUSTER
+caCert: safeharness:buZomXeBSZ2vPStylXRlNw
+clientCert: safeharness:fOo6EfRYTDy2Wxf5RckSJw
+clientKey: safeharness:A72upIdXRXim5jLZMhTOGg
+clientKeyPassphrase: safeharness:vC4TnKlwQIK3Dn9jYTp7Ag
+delegateName: harness-sample-k8s-delegate
+password: safeharness:CiJMnx6PQpiuVbPVImOFEQ
+serviceAccountToken: safeharness:Ri_UMzyNT4CW0SSD1kZ3NA
+skipValidation: false
+usageRestrictions:
+  appEnvRestrictions:
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - PROD
+  - appFilter:
+      filterType: ALL
+    envFilter:
+      filterTypes:
+      - NON_PROD
+useKubernetesDelegate: true
