@@ -25,6 +25,21 @@ phases:
     steps:
     - type: K8S_DEPLOYMENT_ROLLING
       name: Rollout Deployment
+    - type: HTTP
+      name: HTTP
+      properties:
+        sweepingOutputScope: null
+        responseProcessingExpressions: ''
+        method: GET
+        publishAsVar: false
+        header: 'Host: pinger.dev.adobe.io'
+        assertion: ''
+        timeoutMillis: 10000
+        body: ''
+        executeWithPreviousSteps: false
+        url: http://lixk8s-dev-va6-k8s-pub-0-8a4172f6463133b3.elb.us-east-1.amazonaws.com/ping
+        sweepingOutputName: null
+        templateVariables: ''
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Verify
