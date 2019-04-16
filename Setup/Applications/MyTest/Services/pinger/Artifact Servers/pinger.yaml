@@ -1,5 +1,0 @@
-harnessApiVersion: '1.0'
-type: DOCKER
-imageName: pinger
-metadataOnly: true
-serverName: adbe
