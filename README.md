@@ -1,4 +1,6 @@
-# kommander
+# kommander-frontend
+
+Vue.js, Vuetify, axion based frontend for Klipper, WIP.
 
 ## Project setup
 ```
@@ -27,3 +29,7 @@ yarn run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### Current status
+
+Just a few basic components, more work happens on backend side for now.
